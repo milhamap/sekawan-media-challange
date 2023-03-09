@@ -8,22 +8,23 @@ Credits by Muhammad Ilham Adi Pratama
 
 ## Desain Database
 
-[![image.png](https://i.postimg.cc/6qtmgQV9/image.png)](https://postimg.cc/r0ZjtMYb)
+[![image.png](https://i.postimg.cc/rFDbhjpX/skema-Database.png)](https://postimg.cc/VdcDvjMD)
 
 ## Depedencies
 
 - [Express JS](https://expressjs.com/).
 - [Knex](https://knexjs.org/).
 - [JSON Web Token](https://www.npmjs.com/package/@types/jsonwebtoken).
-- [My SQL](https://www.npmjs.com/package/mysql).
 - [Bcrypt](https://www.npmjs.com/package/bcrypt).
 - [Cookie Parser](https://www.npmjs.com/package/cookie-parser).
 - [Body Parser](https://www.npmjs.com/package/body-parser).
 - [Cors](https://www.npmjs.com/package/cors).
 - [DotENV](https://www.npmjs.com/package/dotenv).
-- [Express Validator](https://express-validator.github.io/docs).
 - [Morgan](https://www.npmjs.com/package/morgan).
 - [Nodemon](https://www.npmjs.com/package/nodemon).
+- [Cross ENV](https://www.npmjs.com/package/cross-env)
+- [Fastest Validator](https://www.npmjs.com/package/fastest-validator)
+- [PostgreSQL](https://www.npmjs.com/package/pg)
 
 # Tutorial Github
 
@@ -82,7 +83,7 @@ $ knex seed:run
 
 1. Run server using `npm` command below
 ```console
-$ npm run start
+$ npm run dev
 ```
 
 ## API Documentation
