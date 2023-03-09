@@ -90,63 +90,6 @@ module.exports = {
             })
         }
     },
-    updateTransactionByAdmin: async (req, res) => {
-        try {
-            const { id } = req.params;
-            const { return_date, vehicle_id, user_id } = req.body;
-            const schema = {
-                'return_date': 'string|empty:false',
-                'vehicle_id': 'number|empty:false',
-                'user_id': 'number|empty:false'
-            }
-            const validate = v.validate({
-                return_date,
-                vehicle_id,
-                user_id
-            }, schema);
-            if (validate.length) return res.status(400).json({ message: validate[0].message });
-            await knex('transactions').where({ id }).update({
-                return_date,
-                vehicle_id,
-                user_id
-            });
-            res.status(200).json({
-                message: "Success Update Transaction"
-            })
-        } catch (error) {
-            res.status(500).json({
-                message: "Internal Server Error",
-                error: error.message
-            })
-        }
-    },
-    updateTransactionByEmployee: async (req, res) => {
-        try {
-            const { id } = req.params;
-            const { return_date, vehicle_id } = req.body;
-            const schema = {
-                'return_date': 'string|empty:false',
-                'vehicle_id': 'number|empty:false'
-            }
-            const validate = v.validate({
-                return_date,
-                vehicle_id
-            }, schema);
-            if (validate.length) return res.status(400).json({ message: validate[0].message });
-            await knex('transactions').where({ id }).update({
-                return_date,
-                vehicle_id
-            });
-            res.status(200).json({
-                message: "Success Update Transaction"
-            })
-        } catch (error) {
-            res.status(500).json({
-                message: "Internal Server Error",
-                error: error.message
-            })
-        }
-    },
     confirmTransaction: async (req, res) => {
         try {
             const { id } = req.params;

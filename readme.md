@@ -59,6 +59,12 @@ $ npm install
 cp .env.example .env
 ```
 
+4. Edit pada .env 
+```
+PGUSER_DEV=USER_POSTGRESQL
+PGPASSWORD_DEV=USER_PASSWORD
+```
+
 5. Buatlah database kosong di pg admin dengan nama **warehouse**
 6. Lakukan Migrasi Database
 
@@ -81,4 +87,4 @@ $ npm run start
 
 ## API Documentation
 
-You can access this project API documentation [here](https://documenter.getpostman.com/view/21604420/2s93CEvGMT)
+You can access this project API documentation [here](https://documenter.getpostman.com/view/21604420/2s93JqTkXi)
