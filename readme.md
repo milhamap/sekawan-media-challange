@@ -34,13 +34,13 @@ Credits by Muhammad Ilham Adi Pratama
 2. Ketikan Perintah Berikut
 
 ```
-git clone https://github.com/milhamap/Cariilmu.co.id-challenge.git
+git clone https://github.com/milhamap/sekawan-media-challange.git
 ```
 
 3. Masuk Ke Dalam Folder Hasil Clone
 
 ```
-cd Cariilmu.co.id-challenge
+cd sekawan-media-challange
 ```
 
 # How to Use and Configuration Node JS Express
@@ -59,11 +59,17 @@ $ npm install
 cp .env.example .env
 ```
 
-5. Buatlah database kosong di phpmyadmin dengan nama **db_course**
+5. Buatlah database kosong di pg admin dengan nama **warehouse**
 6. Lakukan Migrasi Database
 
 ```
 $ knex migrate:latest
+```
+
+7. Lakukan seeder Database
+
+```
+$ knex seed:run
 ```
 
 ## How to Run
